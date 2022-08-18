@@ -7,23 +7,24 @@ class Usuario {
         this.mascotas = [];
     }    
     getFullName(){
-        console.log(`${this.nombre} ${this.apellido}`);
+        return console.log(`${this.nombre} ${this.apellido}`);
     }
+
     
     addMascota(nombreMascota) {
-        this.mascotas.push(nombreMascota);
+        return this.mascotas.push(nombreMascota);
     }
     
     countMascotas(){
-        console.log(`${this.nombre} tiene ${this.mascotas.length} mascotas`);
+        return console.log(`${this.nombre} tiene ${this.mascotas.length} mascotas`);
     }
     
     getBooksNames(libros){
-        console.log(libros.map(libro => libro.nombreLibro));
+        return console.log(libros.map(libro => libro.nombreLibro));
     }
     
     addBook(nombreLibro, autorLibro){ 
-        this.libros.push({nombreLibro, autorLibro});
+        return this.libros.push({nombreLibro, autorLibro});
     }
 }
 
